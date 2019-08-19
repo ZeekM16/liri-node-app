@@ -32,13 +32,13 @@ function spotifyThisSong() {
             console.log(error);
         })
     // axios
-        // .get('https://api.spotify.com/v1/search?q=' + "i want it that way")
-        // .then(function (response) {
-        //     console.log(response);
-        // })
-        // .catch(function(error){
-        //     console.log(error);
-        // })
+    // .get('https://api.spotify.com/v1/search?q=' + "i want it that way")
+    // .then(function (response) {
+    //     console.log(response);
+    // })
+    // .catch(function(error){
+    //     console.log(error);
+    // })
 }
 
 
@@ -54,7 +54,7 @@ axios.get(queryUrl).then(
         if (!movieName) {
             movieName = 'Mr. Nobody';
         } console.log(response.data)
-        
+
 
 
     }
@@ -73,6 +73,9 @@ switch (command) {
         break;
     case 'concert-this':
         concertThis();
+        break;
+    case 'do-what-it-says':
+        doWhatItSays();
         break;
     default:
         console.log('Could not run command');
